@@ -19,9 +19,12 @@ const upload = (fieldName, folderName, type = "single") => {
 
     const uploadMiddleware = multer({ storage });
 
-    return type === "array"
-        ? uploadMiddleware.array(fieldName)
-        : uploadMiddleware.single(fieldName);
+    // Return the correct multer middleware based on the upload type
+    if (type === "array") {
+        return uploadMiddleware.array(fieldName); // For multiple files
+    } else {
+        return uploadMiddleware.single(fieldName); // For a single file
+    }
 };
 
 module.exports = upload;
