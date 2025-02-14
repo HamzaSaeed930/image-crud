@@ -29,6 +29,7 @@ const imageController = {
                 images: imagesWithBaseUrl,
             });
         } catch (error) {
+            console.error("Create Image Error: ", error); // Log the full error
             return res.status(500).json({ message: "Error uploading images", error: error.message });
         }
     },
