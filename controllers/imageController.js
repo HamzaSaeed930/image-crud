@@ -2,8 +2,8 @@ const Image = require("../models/imageModel");
 const fs = require("fs");
 const path = require("path");
 
-const BASE_URL = "http://localhost:5000/uploads/images/";
-
+const BASE_URL = "https://image-crud-eight.vercel.app/uploads/images/";
+// https://image-crud-eight.vercel.app/api/url
 const imageController = {
     async createImage(req, res) {
         try {
