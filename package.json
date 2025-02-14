@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "start": "node index.js",
-    "vercel-start": "node index.js"
+    "start": "nodemon index.js"
   },
   "keywords": [],
   "author": "",
@@ -16,6 +15,7 @@
     "express": "^4.21.2",
     "mongoose": "^8.10.0",
     "multer": "^1.4.5-lts.1",
+    "nodemon": "^3.1.9",
     "vercel": "^41.1.3"
   }
 }

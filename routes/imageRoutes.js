@@ -8,7 +8,7 @@ const router = express.Router();
 router.post("/url", upload("image", "images", "array"), imageController.createImage);
 router.put("/image/:id", upload("image", "images", "single"), imageController.updateImage);
 router.delete("/image", imageController.deleteImage);
-app.get("/image", (req, res) => res.status(200).send("Image Routes here"));
+router.get("/image", (req, res) => res.status(200).send("Image Routes here"));
 
 router.get("/:filename", (req, res) => {
     const filename = req.params.filename;
