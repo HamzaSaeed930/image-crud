@@ -1,0 +1,12 @@
+# Node modules directory
+node_modules/
+
+# Logs
+*.log
+
+# Environment files
+.env
+.env.example
+
+
+package-lock.json
